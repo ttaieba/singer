@@ -1,4 +1,11 @@
+# This site is made for the ROYAL concert road shows
+# most popualr singer will participating here.
+
+# don't miss the train it will be amazing. 
+
 # Getting Started with Create React App
+
+ you can browse our website from [here](https://laughing-yonath-056b41.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -9,7 +16,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](https://app.netlify.com/sites/laughing-yonath-056b41/overview) to view it in the browser.
+Open [https://app.netlify.com/sites/laughing-yonath-056b41/overview](https://app.netlify.com/sites/laughing-yonath-056b41/overview) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.

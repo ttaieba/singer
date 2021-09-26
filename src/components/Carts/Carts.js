@@ -23,7 +23,7 @@ const Carts = (props) => {
 
             {/* total number of member  */}
 
-            <p> Singer Added: {props.cart.length} </p>
+            <p>Total Singer Added: {props.cart.length} </p>
 
 
             <br />
