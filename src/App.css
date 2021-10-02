@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  color: azure;
+  background-color: black;
+  border: 2px solid red;
+  width: 50% auto;
+  padding: 20px;
 }
 
 .App-logo {

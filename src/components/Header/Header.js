@@ -1,27 +1,54 @@
-import React from 'react'
-import './Header.css';
-import pic from '../../images/logo.png'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Navbar, Container, Nav, Form, FormControl, Stack } from 'react-bootstrap'
 
 const Header = () => {
     return (
-        <div className="header">
-            {/* menu bar section  */}
-            <nav>
-                <img src={pic} alt="" />
-                <a href="/home"> Home</a>
-                <a href="/shedule">shedule</a>
-                <a href="/aboutus">About us </a>
-                <a href="contactus"> Contact Us</a>
+        <Navbar bg="light" expand="lg">
+            <Container fluid>
+                <Navbar.Brand href="#">Employe Manager</Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                        className="me-auto my-2 my-lg-0"
+                        style={{ maxHeight: '100px' }}
+                        navbarScroll
+                    >
+                        <Stack direction="horizontal" gap={3}>
+                            <NavLink
+                                to="/Home"
+                                activeStyle={{
+                                    fontWeight: "bold",
+                                    color: "red"
+                                }}
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink
+                                to="/Employes"
+                                activeStyle={{
+                                    fontWeight: "bold",
+                                    color: "red"
+                                }}
+                            >
+                                Employes
+                            </NavLink>
+                        </Stack>
 
-            </nav>
 
-            {/* title details here  */}
-            <h1>The Royal Music Concert</h1>
-            <h4>Life is one grand, sweet song, so start the music.
+                    </Nav>
+                    <Form className="d-flex">
+                        <FormControl
+                            type="search"
+                            placeholder="Search"
+                            className="me-2"
+                            aria-label="Search"
+                        />
 
-            </h4>
-            <h1>Total budeget : $ 1500000</h1>
-        </div>
+                    </Form>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 };
 
